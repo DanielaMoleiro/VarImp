@@ -2,8 +2,9 @@
 title: "VarImpGaussian"
 author: "Daniela Moleiro"
 date: "27 de Março de 2018"
-output: 
-  pdf_document: latex_engine: lualatex
+output:
+  pdf_document:
+    latex_engine: lualatex
 ---
 
 
