@@ -20,8 +20,8 @@ knitr::opts_chunk$set(echo = FALSE)
 #**RESULTADOS DA FUNÇÃO "varImpGaussian"**
 
 ```{r varImpGaussian, echo=FALSE, cache=FALSE, include=FALSE, results=FALSE, warning=FALSE, comment=FALSE, warning=FALSE}
-
-list2<-varImpGaussian(miceUlt, class=5)
+library(VarImp)
+list2<-varImpGaussian(npk, class=5)
 
 ```
 
