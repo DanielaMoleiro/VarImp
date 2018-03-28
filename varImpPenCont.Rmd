@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #**RESULTADOS DA FUNÇÃO "varImpPenCont"**
 ```{r varImpPenBi, echo=FALSE, cache=FALSE, include=FALSE, results=FALSE, warning=FALSE, comment=FALSE, warning=FALSE}
 library(VarImp)
-list6<-varImpPenCont(mtcars, class=6
+list6<-varImpPenCont(mtcars, class=6)
 ```
 
 ##**MODELO LASSO:**
