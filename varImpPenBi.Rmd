@@ -7,15 +7,11 @@ output:
     latex_engine: lualatex
 ---
 
-
-
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE)
 
 ```
-
-
 
 #**RESULTADOS DA FUNÇÃO "varImpPenBi"**
 
@@ -26,172 +22,93 @@ list5<-varImpPenBi(npk, class=2)
 
 ```
 
-
-
 ##**MODELO LASSO:**
 
-
-
 ###**As variáveis que constituem o modelo são:**  
-
 ```{r, echo=FALSE}
-
 list5[[1]]$Variaveis_Coeficientes
-
 ```
-
-
 
 &nbsp;
 
-
-
 **O valor do lambda.min é de:**
-
 `r list5[[1]]$lambda.min`
 
 
 
 **O valor do lambda.1se é de:**
-
 `r list5[[1]]$lambda.1se`
 
-
-
 &nbsp;
-
-
 
 ###**A matriz de confusão e as estatísticas obtidas a partir da mesma são:**
-
 ```{r, echo=FALSE}
-
 list5[[1]]$Matriz_Confusao
-
 ```
-
-
 
 &nbsp;
 
-
-
 **A percentagem da área da curva ROC é de:**
-
 `r list5[[1]]$Area_CurvaROC$auc[1]*100`%
 
-
-
-
+&nbsp;
 
 ##**MODELO ELASTIC NET:**
 
-
-
 ###**As variáveis que constituem o modelo são:**
-
 ```{r, echo=FALSE}
-
 list5[[2]]$Variaveis_Coeficientes
-
 ```
 
-
-
 &nbsp;
-
-
 
 **O valor do lambda.min é de:**
-
 `r list5[[2]]$lambda.min`
 
-
-
 **O valor do lambda.1se é de:**
-
 `r list5[[2]]$lambda.1se`
 
-
-
 &nbsp;
-
-
 
 ###**A matriz de confusão e as estatísticas obtidas a partir da mesma são:**
-
 ```{r, echo=FALSE}
-
 list5[[2]]$Matriz_Confusao
-
 ```
 
-
-
 &nbsp;
-
-
 
 **A percentagem da área da curva ROC é de:**
-
 `r list5[[2]]$Area_CurvaROC$auc[1]*100`%
 
-
-
 &nbsp;
-
-
 
 ##**MODELO RIDGE REGRESSION:**
 
-
-
 ###**As variáveis que constituem o modelo são:**
-
 ```{r, echo=FALSE}
-
 list5[[3]]$Variaveis_Coeficientes
-
 ```
-
-
 
 &nbsp;
 
-
-
 **O valor do lambda.min é de:**
-
 `r list5[[3]]$lambda.min`
 
 
 
 **O valor do lambda.1se é de:**
-
 `r list5[[3]]$lambda.1se`
 
-
-
 &nbsp;
-
-
 
 ###**A matriz de confusão e as estatísticas obtidas a partir da mesma são:**
-
 ```{r, echo=FALSE}
-
 list5[[3]]$Matriz_Confusao
-
 ```
-
-
 
 &nbsp;
 
-
-
 **A percentagem da área da curva ROC é de:**
-
 `r list5[[3]]$Area_CurvaROC$auc[1]*100`%
 
 
