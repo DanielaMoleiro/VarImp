@@ -7,109 +7,53 @@ output:
     latex_engine: lualatex
 ---
 
-
-
 ```{r setup, include=FALSE}
-
 knitr::opts_chunk$set(echo = FALSE)
-
 ```
-
-
 
 #**RESULTADOS DA FUNÇÃO "varImpPenCont"**
-
 ```{r varImpPenBi, echo=FALSE, cache=FALSE, include=FALSE, results=FALSE, warning=FALSE, comment=FALSE, warning=FALSE}
-
 library(VarImp)
-load("C:/Users/Staples/Desktop/ESTAGIO/data.RData")
-list6<-varImpPenCont(dados=miceUlt, class=5)
-
+list6<-varImpPenCont(mtcars, class=6
 ```
-
-
 
 ##**MODELO LASSO:**
 
-
-
 ###**As variáveis que constituem o modelo são:**  
-
 ```{r, echo=FALSE}
-
 list6[[1]]$Variaveis_Coeficientes
-
 ```
 
-
-
 &nbsp;
-
-
 
 **O valor do lambda.min é de:**
-
 `r list6[[1]]$lambda.min`
 
-
-
 **O valor do lambda.1se é de:**
-
 `r list6[[1]]$lambda.1se`
 
-
-
 &nbsp;
-
-
 
 ##**MODELO ELASTIC NET:**
 
-
-
 ###**As variáveis que constituem o modelo são:**
-
 ```{r, echo=FALSE}
-
 list6[[2]]$Variaveis_Coeficientes
-
 ```
 
-
-
 &nbsp;
-
-
 
 ##**MODELO RIDGE REGRESSION:**
 
-
-
 ###**As variáveis que constituem o modelo são:**
-
 ```{r, echo=FALSE}
-
 list6[[3]]$Variaveis_Coeficientes
-
 ```
 
-
-
 &nbsp;
-
-
 
 **O valor do lambda.min é de:**
-
 `r list6[[3]]$lambda.min`
 
-
-
 **O valor do lambda.1se é de:**
-
 `r list6[[3]]$lambda.1se`
-
-
-
-&nbsp;
-
