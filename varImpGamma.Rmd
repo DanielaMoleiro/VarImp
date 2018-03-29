@@ -1,12 +1,17 @@
 ---
-title: "VarImpGamma"
-author: "Daniela Moleiro"
-date: "27 de Março de 2018"
+title: "Quality Report"
+author: "Developed by Prologica SA"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   pdf_document:
-    latex_engine: lualatex
+    toc: yes
+header-includes:
+    - \usepackage{fancyhdr}
 ---
-
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\includegraphics[height=2cm]{C:/Users/Staples/Desktop/VarImp/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -14,6 +19,10 @@ knitr::opts_chunk$set(echo = FALSE)
 #**RESULTADOS DA FUNÇÃO "varImpGamma"**
 ```{r varImpGamma, echo=FALSE, cache=FALSE, include=FALSE, results=FALSE, warning=FALSE, comment=FALSE, warning=FALSE}
 library(VarImp)
+#must load workspace first
+#steps:
+#save workspace from your R session using save.image()
+#load workspace here using load()
 list4<-varImpGamma(stackloss, class=3)
 ```
 
